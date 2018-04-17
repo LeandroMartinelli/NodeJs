@@ -1,0 +1,26 @@
+{
+  "name": "ex1",
+  "version": "1.0.0",
+  "description": "aula 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroMartinelli/NodeJs.git"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "Leandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroMartinelli/NodeJs/issues"
+  },
+  "homepage": "https://github.com/LeandroMartinelli/NodeJs#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}

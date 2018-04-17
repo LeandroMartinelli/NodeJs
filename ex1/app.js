@@ -1,13 +1,16 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(request, response){
-    if(request.url == "/editar"){
-        response.end('<html><body><h1>Edit world</h1></body></html>');
-    } else {
-        response.end('<html><body><h1>Hello world</h1></body></html>');
-    }
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response){
+    response.render("index");
 });
-server.listen(3000);
-console.log('Servidor Iniciado');
-// comentario para testes do GIT -> PRIMEIRA branch
 
+app.get('/editar', function(request, response){
+    response.render("editar");
+});
+
+app.listen(3000, function(){
+    console.log('Servidor Iniciado');
+});
